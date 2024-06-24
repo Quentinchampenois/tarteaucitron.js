@@ -1,0 +1,14 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - google
+parserOptions:
+  ecmaVersion: 12
+rules: {
+  max-len: 0,
+  no-var: off, # Disable error when defining var rather than const or let
+  one-var: off, # Disable error on multi-line assignment
+  prefer-rest-params: off,
+  no-invalid-this: warn # Disable error on 'this' keyword
+}
